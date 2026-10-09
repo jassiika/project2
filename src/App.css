@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  background: #000;
+  color: #fff;
+  font-family: system-ui, sans-serif;
+}
+
+.app {
+  padding: 16px 32px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 16px;
+  text-align: center;
+  min-width: 0;
+}
+
+.card img {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  background: #222; 
+}
+
+.card p {
+  margin: 12px 0 0;
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.status {
+  padding: 40px;
+  font-size: 18px;
+}
+
+.error {
+  color: #fff;
+}
+
+@media (max-width: 900px) {
+  .grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 500px) {
+  .grid { grid-template-columns: 1fr; }
+}
